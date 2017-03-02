@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+.navbar-default {
+  background: #11a3ed;
+  color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  border-color: #11a3ed;
+  border-radius: 0px;
+  padding: 5px 0px; }
+  .navbar-default .navbar-brand {
+    color: #ffffff;
+    font-size: 22px; }
+    .navbar-default .navbar-brand:hover {
+      color: #ffffff; }
+    .navbar-default .navbar-brand:focus {
+      color: #ffffff; }
+  .navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 17px;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    padding: 11px 20px;
+    margin: 4px 5px 0px 5px;
+    font-weight: 300; }
+    .navbar-default .navbar-nav > li > a:hover {
+      background: rgba(0, 0, 0, 0.06);
+      box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.06);
+      color: #ffffff; }
+    .navbar-default .navbar-nav > li > a:focus {
+      color: #ffffff; }
+  .navbar-default :hover {
+    color: #eee; }
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 960px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,120 @@
+@import "variables";
+@import "mixins";
+
+body{
+	font-family: $mainFont;
+}
+
+.navbar-default{
+	background: $mainColor;
+	color: white;
+	box-shadow: $mainShadow;
+	border-color: $mainColor;
+	border-radius: 0px;
+	padding: 5px 0px;
+
+
+	.navbar-brand{
+		color: #ffffff;
+		font-size: 22px;
+		&:hover{
+			color: #ffffff;
+		}
+		&:focus{
+			color: #ffffff;	
+		}
+	}
+
+	.navbar-nav>li>a{
+		color: #ffffff;
+		font-size: 17px;
+		text-shadow: $textShadow;
+		border-radius: 7px;
+    	padding: 11px 20px;
+    	margin: 4px 5px 0px 5px;
+    	font-weight: 300;
+		&:hover{
+			background: rgba(0,0,0,0.06);
+    		box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.06);
+    		color: #ffffff;
+		}
+		&:focus{
+			color: #ffffff;
+		}
+	}
+	:hover{
+		color: #eee;
+	}
+
+}
+
+.container{
+    @include large-screen {
+    	width: 960px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

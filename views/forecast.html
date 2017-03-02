@@ -1,0 +1,17 @@
+<h4>Forecast for {{ city }} </h4>
+
+<div ng-repeat="w in weatherResult.list" >
+	<div class="row">
+		<div class="col-md-12">
+			<div class="pane panel-default">
+				<div class="panel-heading">
+					{{ convertToDate(w.dt) | date : 'd MMMM, y'}} 
+				</div>	
+				<div class="panel-body">
+					<h3>Temprature: {{ w.temp.day }}</h3>
+					<h4>Humidity: {{ w.humidity }} </h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

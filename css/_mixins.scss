@@ -1,0 +1,28 @@
+@mixin border{
+	border-radius: 5px;
+	border: none;
+}
+
+@mixin tiny-screen(){
+	@media only screen and (max-width: 320px){
+		@content;
+	}
+}
+
+@mixin small-screen(){
+	@media only screen and (max-width: 480px){
+		@content;
+	}
+}
+
+@mixin medium-screen(){
+	@media only screen and (max-width: 680px){
+		@content;
+	}
+}
+
+@mixin large-screen() {
+	@media only screen and (min-width: 1200px){
+		@content;
+	}
+}
