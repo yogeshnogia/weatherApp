@@ -47,12 +47,12 @@ weatherApp.controller('forecastController', ['$scope', '$sce', '$log', '$resourc
 		
 		$scope.city = cityService.city;
 
-		url='//api.openweathermap.org/data/2.5/forecast/daily/';
+		url='http://api.openweathermap.org/data/2.5/forecast/daily/';
   		$scope.embedUrl=$sce.trustAsResourceUrl(url)
 
 		$scope.days = $routeParams.days || '5';
 
-		$scope.weatherAPI = $resource("//api.openweathermap.org/data/2.5/forecast/daily",
+		$scope.weatherAPI = $resource("http://api.openweathermap.org/data/2.5/forecast/daily",
 		{
 			get: {
 				method: "JSONP",
