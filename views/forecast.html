@@ -1,17 +1,32 @@
-<h4>Forecast for {{ city }} </h4>
 
-<div ng-repeat="w in weatherResult.list" >
-	<div class="row">
-		<div class="col-md-12">
-			<div class="pane panel-default">
-				<div class="panel-heading">
-					{{ convertToDate(w.dt) | date : 'd MMMM, y'}} 
-				</div>	
-				<div class="panel-body">
-					<h3>Temprature: {{ w.temp.day }}</h3>
-					<h4>Humidity: {{ w.humidity }} </h4>
+
+<div class="row forecast-row">
+	<div class="col-md-12 forecast-input">
+		<a href="#!/" >Back to search</a>
+		
+	</div>
+
+	<div class="col-md-12 top-weather-box">
+		<div ng-repeat="w in weatherResult.list | limitTo:1" class="main-temp"> {{ w.temp.day }}° c</div>
+		<p>{{ weatherResult.city.name }} | {{ weatherResult.city.country }}</p>
+	</div>
+
+	<div class="col-md-12 weather-list-div">
+		<ul class="list-group">
+		    <li class="list-group-item weather-list" ng-repeat="w in weatherResult.list">
+			    <div>
+					<!--<div ng-repeat="we in w.weather">
+						<img ng-src="{{ we.icon }}"/> 
+					</div> -->
+				<p class="weather-date"> {{ convertToDate(w.dt) | date: 'd MMMM, y' }} </p>
+					<div ng-repeat="we in w.weather"><p> {{ we.main }} </p></div>
+
 				</div>
-			</div>
-		</div>
+				<div> {{ w.temp.max }}° / {{ w.temp.min }}° 
+					<p class="text-center">max | min</p>	
+				</div>
+			</li>
+	
+		</ul>
 	</div>
 </div>

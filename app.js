@@ -50,7 +50,7 @@ weatherApp.controller('forecastController', ['$scope', '$sce', '$log', '$resourc
 		url='http://api.openweathermap.org/data/2.5/forecast/daily/';
   		$scope.embedUrl=$sce.trustAsResourceUrl(url)
 
-		$scope.days = $routeParams.days || '2';
+		$scope.days = $routeParams.days || '5';
 
 		$scope.weatherAPI = $resource("http://api.openweathermap.org/data/2.5/forecast/daily",
 		{
