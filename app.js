@@ -26,7 +26,7 @@ weatherApp.config(function($routeProvider) {
 
 weatherApp.service('cityService', function(){
 		
-	this.city = "New York, NY";
+	this.city = "";
 
 });
 
